@@ -12,6 +12,7 @@ valid_alt_mode_types = [
     "SMI",
     "PWM",
     "UNUSED",
+    "???"  # TODO: Remove me to check for untyped signals
 ]
 valid_pin_types = ["gpio", "power", "nc"]
 valid_pin_subtypes = ["+5v", "+3v3", "ground"]
