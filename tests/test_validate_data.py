@@ -3,20 +3,27 @@ import json
 
 import pytest
 
+chip_cache = {}
 
-def validate_alt_mode(data):
-    # name = data["name"]
-    mode_type = data.get("type", "")
 
-    assert mode_type != ""
-    assert not mode_type.endswith("?")
+def chip_path(chip):
+    return f"chips/{chip}.json"
+
+
+def get_chip(chip):
+    if chip not in chip_cache:
+        chip_cache[chip] = json.load(open(chip_path(chip)))
+
+    return chip_cache[chip]
 
 
 def validate_pin(data):
-    alt_modes = data.get("alt_modes", [])
+    chip = get_chip(data["chip"])
+    path = chip_path(data["chip"])
+    signal = data["signal"]
 
-    for alt_mode in alt_modes:
-        validate_alt_mode(alt_mode)
+    if signal not in chip["signals"]:
+        raise AssertionError(f"Signal {signal} not found in {path}")
 
 
 def validate_header(data):
@@ -32,7 +39,7 @@ def validate_header(data):
         validate_pin(pin)
 
 
-@pytest.mark.parametrize('board_file', glob.glob("boards/*.json"))
+@pytest.mark.parametrize("board_file", glob.glob("boards/*.json"))
 def test_validate_board_json_files(board_file):
     data = json.load(open(board_file, "r"))
 
