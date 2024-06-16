@@ -1,7 +1,8 @@
 {
     "name": "Raspberry Pi 5",
-    "headers": {
-        "j8": {
+    "headers": [
+        {
+            "name": "j8",
             "width": 2,
             "height": 20,
             "orientation": 0,
@@ -328,5 +329,5 @@
                 ]}
             ]
         }
-    }
+    ]
 }

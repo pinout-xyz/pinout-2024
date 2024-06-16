@@ -20,6 +20,7 @@ def validate_pin(data):
 
 
 def validate_header(data):
+    # name = data["name"]
     width = data["width"]
     height = data["height"]
     # orientation = data["orientation"]
@@ -35,5 +36,5 @@ def validate_header(data):
 def test_validate_board_json_files(board_file):
     data = json.load(open(board_file, "r"))
 
-    for name, header in data["headers"].items():
+    for header in data["headers"]:
         validate_header(header)
