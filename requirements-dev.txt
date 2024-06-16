@@ -1,0 +1,5 @@
+check-manifest
+ruff
+codespell
+isort
+tox
