@@ -5,245 +5,51 @@
             "name": "j8",
             "width": 2,
             "height": 20,
+            "type": "dupont",
+            "polarity": "pin",
+            "pitch": 0.1,
             "orientation": 0,
-            "direction": "alternating",
             "pins": [
-                {"name": "3v3 Power", "type": "power", "subtype": "+3v3"},
-                {"name": "5v Power", "type": "power", "subtype": "+5v"},
-                {"name": "GPIO 2", "alt_modes": [
-                    {"name": "SDA1", "type": "I2C"},
-                    {"name": "SA3", "type": "???"},
-                    {"name": "LCD_VSYNC", "type": "???"},
-                    {"name": "SPI3_MOSI", "type": "SPI"},
-                    {"name": "CTS2", "type": "UART"},
-                    {"name": "SDA3", "type": "I2C"}
-                ]},
-                {"name": "5v Power", "type": "power", "subtype": "+5v"},
-                {"name": "GPIO 3", "alt_modes": [
-                    {"name": "SCL1", "type": "I2C"},
-                    {"name": "SA2", "type": "???"},
-                    {"name": "LCD_HSYNC", "type": "???"},
-                    {"name": "SPI3_SCLK", "type": "SPI"},
-                    {"name": "RTS2", "type": "UART"},
-                    {"name": "SCL3", "type": "I2C"}
-                ]},
-                {"name": "Ground", "type": "power", "subtype": "ground"},
-                {"name": "GPIO 4", "alt_modes": [
-                    {"name": "GPCLK0", "type": "???"},
-                    {"name": "SA1", "type": "???"},
-                    {"name": "DPI_D0", "type": "DPI"},
-                    {"name": "SPI4_CE0_N", "type": "SPI"},
-                    {"name": "TXD3", "type": "UART"},
-                    {"name": "SDA3", "type": "I2C"}
-                ]},
-                {"name": "GPIO 14", "alt_modes": [
-                    {"name": "TXD0", "type": "UART"},
-                    {"name": "SD6", "type": "SDIO"},
-                    {"name": "DPI_D10", "type": "DPI"},
-                    {"name": "SPI5_MOSI", "type": "SPI"},
-                    {"name": "CTS5", "type": "UART"},
-                    {"name": "TXD1", "type": "UART"}
-                ]},
-                {"name": "Ground", "type": "power", "subtype": "ground"},
-                {"name": "GPIO 15", "alt_modes": [
-                    {"name": "RXD0", "type": "UART"},
-                    {"name": "SD7", "type": "SDIO"},
-                    {"name": "DPI_D11", "type": "DPI"},
-                    {"name": "SPI5_SCLK", "type": "SPI"},
-                    {"name": "RTS5", "type": "UART"},
-                    {"name": "RXD1", "type": "UART"}
-                ]},
-                {"name": "GPIO 17", "alt_modes": [
-                    {"name": "FL1 (?)", "type": "???"},
-                    {"name": "SD9", "type": "SDIO"},
-                    {"name": "DPI_D13", "type": "DPI"},
-                    {"name": "RTS0", "type": "UART"},
-                    {"name": "SPI1_CE1_N", "type": "SPI"},
-                    {"name": "RTS1", "type": "UART"}
-                ]},
-                {"name": "GPIO 18", "alt_modes": [
-                    {"name": "PCM_CLK", "type": "I2S"},
-                    {"name": "SD10", "type": "SDIO"},
-                    {"name": "DPI_D14", "type": "DPI"},
-                    {"name": "SPI6_CE0_N", "type": "SPI"},
-                    {"name": "SPI1_CE0_N", "type": "SPI"},
-                    {"name": "PWM0_0", "type": "PWM"}
-                ]},
-                {"name": "GPIO 27", "alt_modes": [
-                    {"name": "SD0_DAT3", "type": "SDIO"},
-                    {"name": "TE1 (?)", "type": "???"},
-                    {"name": "DPI_D23", "type": "DPI"},
-                    {"name": "SD1_DAT3", "type": "SDIO"},
-                    {"name": "ARM_TMS", "type": "???"},
-                    {"name": "SPI6_CE1_N", "type": "SPI"}
-                ]},
-                {"name": "Ground", "type": "power", "subtype": "ground"},
-                {"name": "GPIO 22", "alt_modes": [
-                    {"name": "SD0_CLK", "type": "SDIO"},
-                    {"name": "SD14", "type": "SDIO"},
-                    {"name": "DPI_D18", "type": "DPI"},
-                    {"name": "SD1_CLK", "type": "SDIO"},
-                    {"name": "ARM_TRST", "type": "???"},
-                    {"name": "SDA6", "type": "I2C"}
-                ]},
-                {"name": "GPIO 23", "alt_modes": [
-                    {"name": "SD0_CMD", "type": "SDIO"},
-                    {"name": "SD15", "type": "SDIO"},
-                    {"name": "DPI_D19", "type": "DPI"},
-                    {"name": "SD1_CMD", "type": "SDIO"},
-                    {"name": "ARM_RTCK", "type": "???"},
-                    {"name": "SCL6", "type": "I2C"}
-                ]},
-                {"name": "3v3 Power", "type": "power", "subtype": "+3v3"},
-                {"name": "GPIO 24", "alt_modes": [
-                    {"name": "SD0_DAT0", "type": "SDIO"},
-                    {"name": "SD16", "type": "SDIO"},
-                    {"name": "DPI_D20", "type": "DPI"},
-                    {"name": "SD1_DAT0", "type": "SDIO"},
-                    {"name": "ARM_TDO", "type": "???"},
-                    {"name": "SPI3_CE1_N", "type": "SPI"}
-                ]},
-                {"name": "GPIO 10", "alt_modes": [
-                    {"name": "SPI0_MOSI", "type": "SPI"},
-                    {"name": "SD2", "type": "SDIO"},
-                    {"name": "DPI_D6", "type": "DPI"},
-                    {"name": "I2CSL SDA / MOSI", "type": "???"},
-                    {"name": "CTS4", "type": "UART"},
-                    {"name": "SDA5", "type": "I2C"}
-                ]},
-                {"name": "Ground", "type": "power", "subtype": "ground"},
-                {"name": "GPIO 9", "alt_modes": [
-                    {"name": "SPI0_MISO", "type": "SPI"},
-                    {"name": "SD1", "type": "SDIO"},
-                    {"name": "DPI_D5", "type": "DPI"},
-                    {"name": "I2CSL SDI / MISO", "type": "???"},
-                    {"name": "RXD4", "type": "UART"},
-                    {"name": "SCL4", "type": "I2C"}
-                ]},
-                {"name": "GPIO 25", "alt_modes": [
-                    {"name": "SD0_DAT1", "type": "SDIO"},
-                    {"name": "SD17", "type": "SDIO"},
-                    {"name": "DPI_D21", "type": "DPI"},
-                    {"name": "SD1_DAT1", "type": "SDIO"},
-                    {"name": "ARM_TCK", "type": "???"},
-                    {"name": "SPI4_CE1_N", "type": "SPI"}
-                ]},
-                {"name": "GPIO 11", "alt_modes": [
-                    {"name": "SPI0_SCLK", "type": "SPI"},
-                    {"name": "SD3", "type": "SDIO"},
-                    {"name": "DPI_D7", "type": "DPI"},
-                    {"name": "I2CSL SCL / SCLK", "type": "???"},
-                    {"name": "RTS4", "type": "UART"},
-                    {"name": "SCL5", "type": "I2C"}
-                ]},
-                {"name": "GPIO 8", "alt_modes": [
-                    {"name": "SPI0_CE0_N", "type": "SPI"},
-                    {"name": "SD0", "type": "SDIO"},
-                    {"name": "DPI_D4", "type": "DPI"},
-                    {"name": "I2CSL CE_N", "type": "???"},
-                    {"name": "TXD4", "type": "UART"},
-                    {"name": "SDA4", "type": "I2C"}
-                ]},
-                {"name": "Ground", "type": "power", "subtype": "ground"},
-                {"name": "GPIO 7", "alt_modes": [
-                    {"name": "SPI0_CE1_N", "type": "SPI"},
-                    {"name": "SWE_N / SRW_N", "type": "???"},
-                    {"name": "DPI_D3", "type": "DPI"},
-                    {"name": "SPI4_SCLK", "type": "SPI"},
-                    {"name": "RTS3", "type": "UART"},
-                    {"name": "SCL4", "type": "I2C"}
-                ]},
-                {"name": "GPIO 0", "alt_modes": [
-                    {"name": "SDA0", "type": "I2C"},
-                    {"name": "SA5", "type": "???"},
-                    {"name": "PCLK", "type": "???"},
-                    {"name": "SPI3_CE0_N", "type": "SPI"},
-                    {"name": "TXD2", "type": "UART"},
-                    {"name": "SDA6", "type": "I2C"}
-                ]},
-                {"name": "GPIO 1", "alt_modes": [
-                    {"name": "SCL0", "type": "I2C"},
-                    {"name": "SA4", "type": "???"},
-                    {"name": "DE", "type": "???"},
-                    {"name": "SPI3_MISO", "type": "SPI"},
-                    {"name": "RXD2", "type": "UART"},
-                    {"name": "SCL6", "type": "I2C"}
-                ]},
-                {"name": "GPIO 5", "alt_modes": [
-                    {"name": "GPCLK1", "type": "???"},
-                    {"name": "SA0", "type": "???"},
-                    {"name": "DPI_D1", "type": "DPI"},
-                    {"name": "SPI4_MISO", "type": "SPI"},
-                    {"name": "RXD3", "type": "UART"},
-                    {"name": "SCL3", "type": "I2C"}
-                ]},
-                {"name": "Ground", "type": "power", "subtype": "ground"},
-                {"name": "GPIO 6", "alt_modes": [
-                    {"name": "GPCLK2", "type": "???"},
-                    {"name": "SOE_N / SE", "type": "???"},
-                    {"name": "DPI_D2", "type": "DPI"},
-                    {"name": "SPI4_MOSI", "type": "SPI"},
-                    {"name": "CTS3", "type": "UART"},
-                    {"name": "SDA4", "type": "I2C"}
-                ]},
-                {"name": "GPIO 12", "alt_modes": [
-                    {"name": "PWM0_0", "type": "PWM"},
-                    {"name": "SD4", "type": "SDIO"},
-                    {"name": "DPI_D8", "type": "DPI"},
-                    {"name": "SPI5_CE0_N", "type": "SPI"},
-                    {"name": "TXD5", "type": "UART"},
-                    {"name": "SDA5", "type": "I2C"}
-                ]},
-                {"name": "GPIO 13", "alt_modes": [
-                    {"name": "PWM0_1", "type": "PWM"},
-                    {"name": "SD5", "type": "SDIO"},
-                    {"name": "DPI_D9", "type": "DPI"},
-                    {"name": "SPI5_MISO", "type": "SPI"},
-                    {"name": "RXD5", "type": "UART"},
-                    {"name": "SCL5", "type": "I2C"}
-                ]},
-                {"name": "Ground", "type": "power", "subtype": "ground"},
-                {"name": "GPIO 19", "alt_modes": [
-                    {"name": "PCM_FS", "type": "I2S"},
-                    {"name": "SD11", "type": "SDIO"},
-                    {"name": "DPI_D15", "type": "DPI"},
-                    {"name": "SPI6_MISO", "type": "SPI"},
-                    {"name": "SPI1_MISO", "type": "SPI"},
-                    {"name": "PWM0_1", "type": "PWM"}
-                ]},
-                {"name": "GPIO 16", "alt_modes": [
-                    {"name": "FL0 (?)", "type": "???"},
-                    {"name": "SD8", "type": "SDIO"},
-                    {"name": "DPI_D12", "type": "DPI"},
-                    {"name": "CTS0", "type": "UART"},
-                    {"name": "SPI1_CE2_N", "type": "SPI"},
-                    {"name": "CTS1", "type": "UART"}
-                ]},
-                {"name": "GPIO 26", "alt_modes": [
-                    {"name": "SD0_DAT2", "type": "SDIO"},
-                    {"name": "TE0 (?)", "type": "???"},
-                    {"name": "DPI_D22", "type": "DPI"},
-                    {"name": "SD1_DAT2", "type": "SDIO"},
-                    {"name": "ARM_TDI", "type": "???"},
-                    {"name": "SPI5_CE1_N", "type": "SPI"}
-                ]},
-                {"name": "GPIO 20", "alt_modes": [
-                    {"name": "PCM_DIN", "type": "I2S"},
-                    {"name": "SD12", "type": "SDIO"},
-                    {"name": "DPI_D16", "type": "DPI"},
-                    {"name": "SPI6_MOSI", "type": "SPI"},
-                    {"name": "SPI1_MOSI", "type": "SPI"},
-                    {"name": "GPCLK0", "type": "???"}
-                ]},
-                {"name": "Ground", "type": "power", "subtype": "ground"},
-                {"name": "GPIO 21", "alt_modes": [
-                    {"name": "PCM_DOUT", "type": "I2S"},
-                    {"name": "SD13", "type": "SDIO"},
-                    {"name": "DPI_D17", "type": "DPI"},
-                    {"name": "SPI6_SCLK", "type": "SPI"},
-                    {"name": "SPI1_SCLK", "type": "SPI"},
-                    {"name": "GPCLK1", "type": "???"}
-                ]}
+                {"chip": "common", "signal": "+3v3"},
+                {"chip": "common", "signal": "+5v"},
+                {"chip": "bcm2711", "signal": "2", "canonical_mode": 3},
+                {"chip": "common", "signal": "+5v"},
+                {"chip": "bcm2711", "signal": "3", "canonical_mode": 3},
+                {"chip": "common", "signal": "ground"},
+                {"chip": "bcm2711", "signal": "4", "canonical_mode": 0},
+                {"chip": "bcm2711", "signal": "14", "canonical_mode": 4},
+                {"chip": "common", "signal": "ground"},
+                {"chip": "bcm2711", "signal": "15", "canonical_mode": 4},
+                {"chip": "bcm2711", "signal": "17"},
+                {"chip": "bcm2711", "signal": "18", "canonical_mode": 2},
+                {"chip": "bcm2711", "signal": "27"},
+                {"chip": "common", "signal": "ground"},
+                {"chip": "bcm2711", "signal": "22"},
+                {"chip": "bcm2711", "signal": "23"},
+                {"chip": "common", "signal": "+3v3"},
+                {"chip": "bcm2711", "signal": "24"},
+                {"chip": "bcm2711", "signal": "10", "canonical_mode": 0},
+                {"chip": "common", "signal": "ground"},
+                {"chip": "bcm2711", "signal": "9", "canonical_mode": 0},
+                {"chip": "bcm2711", "signal": "25"},
+                {"chip": "bcm2711", "signal": "11", "canonical_mode": 0},
+                {"chip": "bcm2711", "signal": "8", "canonical_mode": 0},
+                {"chip": "common", "signal": "ground"},
+                {"chip": "bcm2711", "signal": "7", "canonical_mode": 0},
+                {"chip": "bcm2711", "signal": "0", "canonical_mode": 3},
+                {"chip": "bcm2711", "signal": "1", "canonical_mode": 3},
+                {"chip": "bcm2711", "signal": "5"},
+                {"chip": "common", "signal": "ground"},
+                {"chip": "bcm2711", "signal": "6"},
+                {"chip": "bcm2711", "signal": "12", "canonical_mode": 0},
+                {"chip": "bcm2711", "signal": "13", "canonical_mode": 0},
+                {"chip": "common", "signal": "ground"},
+                {"chip": "bcm2711", "signal": "19", "canonical_mode": 2},
+                {"chip": "bcm2711", "signal": "16"},
+                {"chip": "bcm2711", "signal": "26"},
+                {"chip": "bcm2711", "signal": "20", "canonical_mode": 2},
+                {"chip": "common", "signal": "ground"},
+                {"chip": "bcm2711", "signal": "21", "canonical_mode": 2}
             ]
         }
     ]

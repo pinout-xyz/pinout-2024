@@ -1,0 +1,229 @@
+{
+    "name": "BCM2835",
+    "signals": {
+        "0": {"name": "GPIO 0", "alt_modes": [
+            {"name": "SDA0", "type": "I2C"},
+            {"name": "SA5", "type": "SMI"},
+            {"name": "PCLK", "type": "???"},
+            {"name": "AVEOUT_VCLK", "type": "???"},
+            {"name": "AVEIN_VCLK", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "1": {"name": "GPIO 1", "alt_modes": [
+            {"name": "SCL0", "type": "I2C"},
+            {"name": "SA4", "type": "SMI"},
+            {"name": "DE", "type": "???"},
+            {"name": "AVEOUT_DSYNC", "type": "???"},
+            {"name": "AVEIN_DSYNC", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "2": {"name": "GPIO 2", "alt_modes": [
+            {"name": "SDA1", "type": "I2C"},
+            {"name": "SA3", "type": "SMI"},
+            {"name": "LCD_VSYNC", "type": "DPI"},
+            {"name": "AVEOUT_VSYNC", "type": "???"},
+            {"name": "AVEIN_VSYNC", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "3": {"name": "GPIO 3", "alt_modes": [
+            {"name": "SCL1", "type": "I2C"},
+            {"name": "SA2", "type": "SMI"},
+            {"name": "LCD_HSYNC", "type": "DPI"},
+            {"name": "AVEOUT_HSYNC", "type": "???"},
+            {"name": "AVEIN_HSYNC", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "4": {"name": "GPIO 4", "alt_modes": [
+            {"name": "GPCLK0", "type": "GPCLK"},
+            {"name": "SA1", "type": "SMI"},
+            {"name": "DPI_D0", "type": "DPI"},
+            {"name": "AVEOUT_VID0", "type": "???"},
+            {"name": "AVEIN_VID0", "type": "???"},
+            {"name": "ARM_TDI", "type": "JTAG"}
+        ]},
+        "5": {"name": "GPIO 5", "alt_modes": [
+            {"name": "GPCLK1", "type": "GPCLK"},
+            {"name": "SA0", "type": "SMI"},
+            {"name": "DPI_D1", "type": "DPI"},
+            {"name": "AVEOUT_VID1", "type": "???"},
+            {"name": "AVEIN_VID1", "type": "???"},
+            {"name": "ARM_TDO", "type": "JTAG"}
+        ]},
+        "6": {"name": "GPIO 6", "alt_modes": [
+            {"name": "GPCLK2", "type": "GPCLK"},
+            {"name": "SOE_N / SE", "type": "???"},
+            {"name": "DPI_D2", "type": "DPI"},
+            {"name": "AVEOUT_VID2", "type": "???"},
+            {"name": "AVEIN_VID2", "type": "???"},
+            {"name": "ARM_RTCK", "type": "JTAG"}
+        ]},
+        "7": {"name": "GPIO 7", "alt_modes": [
+            {"name": "SPI0_CE1_N", "type": "SPI"},
+            {"name": "SWE_N / SRW_N", "type": "???"},
+            {"name": "DPI_D3", "type": "DPI"},
+            {"name": "AVEOUT_VID3", "type": "???"},
+            {"name": "AVEIN_VID3", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "8": {"name": "GPIO 8", "alt_modes": [
+            {"name": "SPI0_CE0_N", "type": "SPI"},
+            {"name": "SD0", "type": "SMI"},
+            {"name": "DPI_D4", "type": "DPI"},
+            {"name": "AVEOUT_VID4", "type": "???"},
+            {"name": "AVEIN_VID4", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "9": {"name": "GPIO 9", "alt_modes": [
+            {"name": "SPI0_MISO", "type": "SPI"},
+            {"name": "SD1", "type": "SMI"},
+            {"name": "DPI_D5", "type": "DPI"},
+            {"name": "AVEOUT_VID5", "type": "???"},
+            {"name": "AVEIN_VID5", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "10": {"name": "GPIO 10", "alt_modes": [
+            {"name": "SPI0_MOSI", "type": "SPI"},
+            {"name": "SD2", "type": "SMI"},
+            {"name": "DPI_D6", "type": "DPI"},
+            {"name": "AVEOUT_VID6", "type": "???"},
+            {"name": "AVEIN_VID6", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "11": {"name": "GPIO 11", "alt_modes": [
+            {"name": "SPI0_SCLK", "type": "SPI"},
+            {"name": "SD3", "type": "SMI"},
+            {"name": "DPI_D7", "type": "DPI"},
+            {"name": "AVEOUT_VID7", "type": "???"},
+            {"name": "AVEIN_VID7", "type": "???"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "12": {"name": "GPIO 12", "alt_modes": [
+            {"name": "PWM0", "type": "PWM"},
+            {"name": "SD4", "type": "SMI"},
+            {"name": "DPI_D8", "type": "DPI"},
+            {"name": "AVEOUT_VID8", "type": "???"},
+            {"name": "AVEIN_VID8", "type": "???"},
+            {"name": "ARM_TMS", "type": "JTAG"}
+        ]},
+        "13": {"name": "GPIO 13", "alt_modes": [
+            {"name": "PWM1", "type": "PWM"},
+            {"name": "SD5", "type": "SMI"},
+            {"name": "DPI_D9", "type": "DPI"},
+            {"name": "AVEOUT_VID9", "type": "???"},
+            {"name": "AVEIN_VID9", "type": "???"},
+            {"name": "ARM_TCK", "type": "JTAG"}
+        ]},
+        "14": {"name": "GPIO 14", "alt_modes": [
+            {"name": "TXD0", "type": "UART"},
+            {"name": "SD6", "type": "SMI"},
+            {"name": "DPI_D10", "type": "DPI"},
+            {"name": "AVEOUT_VID10", "type": "???"},
+            {"name": "AVEIN_VID10", "type": "???"},
+            {"name": "TXD1", "type": "UART"}
+        ]},
+        "15": {"name": "GPIO 15", "alt_modes": [
+            {"name": "RXD0", "type": "UART"},
+            {"name": "SD7", "type": "SMI"},
+            {"name": "DPI_D11", "type": "DPI"},
+            {"name": "AVEOUT_VID11", "type": "???"},
+            {"name": "AVEIN_VID11", "type": "???"},
+            {"name": "RXD1", "type": "UART"}
+        ]},
+        "16": {"name": "GPIO 16", "alt_modes": [
+            {"name": "FL0", "type": "???"},
+            {"name": "SD8", "type": "SMI"},
+            {"name": "DPI_D12", "type": "DPI"},
+            {"name": "CTS0", "type": "UART"},
+            {"name": "SPI1_CE2_N", "type": "SPI"},
+            {"name": "CTS1", "type": "UART"}
+        ]},
+        "17": {"name": "GPIO 17", "alt_modes": [
+            {"name": "FL1", "type": "???"},
+            {"name": "SD9", "type": "SMI"},
+            {"name": "DPI_D13", "type": "DPI"},
+            {"name": "RTS0", "type": "UART"},
+            {"name": "SPI1_CE1_N", "type": "SPI"},
+            {"name": "RTS1", "type": "UART"}
+        ]},
+        "18": {"name": "GPIO 18", "alt_modes": [
+            {"name": "PCM_CLK", "type": "I2S"},
+            {"name": "SD10", "type": "SMI"},
+            {"name": "DPI_D14", "type": "DPI"},
+            {"name": "BSCSL SDA / MOSI", "type": "???"},
+            {"name": "SPI1_CE0_N", "type": "SPI"},
+            {"name": "PWM0", "type": "PWM"}
+        ]},
+        "19": {"name": "GPIO 19", "alt_modes": [
+            {"name": "PCM_FS", "type": "I2S"},
+            {"name": "SD11", "type": "SMI"},
+            {"name": "DPI_D15", "type": "DPI"},
+            {"name": "BSCSL SCL / SCLK", "type": "???"},
+            {"name": "SPI1_MISO", "type": "SPI"},
+            {"name": "PWM1", "type": "PWM"}
+        ]},
+        "20": {"name": "GPIO 20", "alt_modes": [
+            {"name": "PCM_DIN", "type": "I2S"},
+            {"name": "SD12", "type": "SMI"},
+            {"name": "DPI_D16", "type": "DPI"},
+            {"name": "BSCSL / MISO", "type": "???"},
+            {"name": "SPI1_MOSI", "type": "SPI"},
+            {"name": "GPCLK0", "type": "GPCLK"}
+        ]},
+        "21": {"name": "GPIO 21", "alt_modes": [
+            {"name": "PCM_DOUT", "type": "I2S"},
+            {"name": "SD13", "type": "SMI"},
+            {"name": "DPI_D17", "type": "DPI"},
+            {"name": "BSCSL / CE_N", "type": "???"},
+            {"name": "SPI1_SCLK", "type": "SPI"},
+            {"name": "GPCLK1", "type": "GPCLK"}
+        ]},
+        "22": {"name": "GPIO 22", "alt_modes": [
+            {"name": "SD0_CLK", "type": "SMI"},
+            {"name": "SD14", "type": "SMI"},
+            {"name": "DPI_D18", "type": "DPI"},
+            {"name": "SD1_CLK", "type": "SMI"},
+            {"name": "ARM_TRST", "type": "JTAG"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "23": {"name": "GPIO 23", "alt_modes": [
+            {"name": "SD0_CMD", "type": "SMI"},
+            {"name": "SD15", "type": "SMI"},
+            {"name": "DPI_D19", "type": "DPI"},
+            {"name": "SD1_CMD", "type": "SMI"},
+            {"name": "ARM_RTCK", "type": "JTAG"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "24": {"name": "GPIO 24", "alt_modes": [
+            {"name": "SD0_DAT0", "type": "SMI"},
+            {"name": "SD16", "type": "SMI"},
+            {"name": "DPI_D20", "type": "DPI"},
+            {"name": "SD1_DAT0", "type": "SMI"},
+            {"name": "ARM_TDO", "type": "JTAG"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "25": {"name": "GPIO 25", "alt_modes": [
+            {"name": "SD0_DAT1", "type": "SMI"},
+            {"name": "SD17", "type": "SMI"},
+            {"name": "DPI_D21", "type": "DPI"},
+            {"name": "SD1_DAT1", "type": "SMI"},
+            {"name": "ARM_TCK", "type": "JTAG"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "26": {"name": "GPIO 26", "alt_modes": [
+            {"name": "SD0_DAT2", "type": "SMI"},
+            {"name": "TE0", "type": "???"},
+            {"name": "DPI_D22", "type": "DPI"},
+            {"name": "SD1_DAT2", "type": "SMI"},
+            {"name": "ARM_TDI", "type": "JTAG"},
+            {"name": "", "type": "UNUSED"}
+        ]},
+        "27": {"name": "GPIO 27", "alt_modes": [
+            {"name": "SD0_DAT3", "type": "SMI"},
+            {"name": "TE1", "type": "???"},
+            {"name": "DPI_D23", "type": "DPI"},
+            {"name": "SD1_DAT3", "type": "SMI"},
+            {"name": "ARM_TMS", "type": "JTAG"},
+            {"name": "", "type": "UNUSED"}
+        ]}
+    }
+}
