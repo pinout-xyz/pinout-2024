@@ -23,10 +23,6 @@
             <li><a href="#">Pi 1</a></li>
         </ul> 
     </nav>
-    <header>
-        <h1>Raspberry Pi 5 Pinout</h1>
-        <ul><li title="Please donate to support continued work on these websites! Thank you.">Donate</li><li><a href="https://ko-fi.com/gadgetoid" title="Buy me a coffee on Ko-Fi">Ko-Fi</a></li><li><a href="https://github.com/sponsors/Gadgetoid" title="Sponsor me on GitHub">GitHub</a></li><li><a href="https://www.patreon.com/gadgetoid" title="Sponsor me on Patreon">Patreon</a></li></ul>
-    </header>
     <aside>
         <nav>
             {pinout_table}
@@ -44,11 +40,18 @@
                 <li class="gpclk"><i aria-label="Clock icon" class="fa-solid fa-clock"></i> GPCLK<small> - General-purpose Clock</small></li>
             </ul>
         </section>
+        <section>
+            <img src="//pinout.xyz/resources/pi-orientation.png" width="196" height="297">
+        </section>
     </aside>
+    <header>
+        <h1>Raspberry Pi 5 Pinout</h1>
+        <ul><li title="Please donate to support continued work on these websites! Thank you.">Donate</li><li><a href="https://ko-fi.com/gadgetoid" title="Buy me a coffee on Ko-Fi">Ko-Fi</a></li><li><a href="https://github.com/sponsors/Gadgetoid" title="Sponsor me on GitHub">GitHub</a></li><li><a href="https://www.patreon.com/gadgetoid" title="Sponsor me on Patreon">Patreon</a></li></ul>
+    </header>
     <article>
         <section>
             <p>This GPIO Pinout is an interactive reference to the Raspberry Pi GPIO pins, and a guide to the Raspberry Pi's GPIO interfaces.</p>
-            <h4>Support Pinout.xyz</h4>
+            <h3>Support Pinout.xyz</h3>
             <p>If you love Pinout, please help me fund new features and improvements via:</p>
             <ul>
                 <li>GitHub at <a href="https://github.com/sponsors/gadgetoid">GitHub.com/sponsors/gadgetoid</a></li>
@@ -56,14 +59,14 @@
                 <li>Ko-Fi at <a href="https://ko-fi.com/gadgetoid">Ko-fi.com/gadgetoid</a></li>
             </ul>
             <p>Every $1 makes all the difference! Thank you.</p>
-            <h4>What do these numbers mean?</h4>
+            <h3>What do these numbers mean?</h3>
             <ul>
             <li>GPIO - General Purpose Input/Output, aka "BCM" or "Broadcom". These are the big numbers, e.g. "GPIO 22". You'll use these with gpiod or GPIO Zero.</li>
             <li>Physical - or "Board" correspond to the pin's physical location on the header. These are the small numbers next to the header, e.g. "Physical Pin 15".</li>
             </ul>
-            <h4>What's the orientation of this pinout?</h4>
+            <h3>What's the orientation of this pinout?</h3>
             <p>Pinout depicts pin 1 in the top left corner. Pin 1 is the only pin with a square solder pad, which may only be visible from the underside of your Pi. If you orient your Pi such that you are looking at the top with the GPIO on the right and HDMI port(s) on the left, your orientation will match Pinout.</p>
-            <h2>Graphical Pinout</h2>
+            <h3>Graphical Pinout</h3>
             <p>We've whipped up a simple graphical Raspberry Pi GPIO Pinout. Feel free to print, embed, share or hotlink this image and don't forget to credit us!</p>
             <p><img alt="Graphical Raspberry Pi GPIO Pinout" src="https://raw.githubusercontent.com/pinout-xyz/Pinout.xyz/master/resources/raspberry-pi-pinout.png" /></p>
         </section>

@@ -1,12 +1,8 @@
 body {
-    display: grid;
-    place-items: top;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
+    margin: 0;
     color: #222;
-    grid-template-columns: 480px auto;
-    grid-gap: 20px;
-    margin: 20px;
 }
 footer {
     display: grid;
@@ -20,25 +16,38 @@ footer p {
     text-align: center;
 }
 aside {
+    margin-top: 20px; /* mobile, removed >= 640px */
     grid-template-rows: auto 1fr;
+    grid-template-columns: auto 196px;
+    display: grid;
 }
 aside nav {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-column: 1 / 3;
+}
+aside section img {
+    margin-top: 20px;
 }
 aside h2 {
     font-size: 120%;
 }
-aside ul, aside li {
+ul, li {
     margin: 0;
     padding: 0;
 }
 aside li {
-    margin-left: 20px;
     font-size: 80%;
 }
-article img {
+section img {
     max-width: 100%;
+    height: auto;
+}
+article section {
+    margin: 0 20px 0 20px;
+}
+article section li {
+    margin: 0 0 15px 0;
 }
 a, a:hover {
     color: #859900;
@@ -54,6 +63,7 @@ header, body > nav {
     display: grid;
 }
 header {
+    margin-top: 20px; /* mobile, removed >= 640px */
     grid-template-columns: auto auto;
 }
 header h1 {
@@ -203,10 +213,42 @@ tr:hover i {color: inherit;}
 .labels tbody tr.uart:hover:before  {background-color: #6c71c4cc;border-color: #6c71c4;}
 .labels tbody tr.ground:hover:before{background-color: #555555cc;border-color: #555555;}
 
+section, footer {
+    margin: 20px; /* mobile, removed >= 640px */
+}
+
+@media (min-width: 640px) {
+    body {
+        display: grid;
+        grid-template-columns: 480px auto;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+    section, footer {
+        margin: 0;
+    }
+    aside {
+        margin-top: 0;
+        grid-row: 2;
+    }
+    aside li {
+        margin-left: 20px;
+    }
+    article p:nth-child(1) {
+        margin-top: 0;
+    }
+    body > header {
+        margin-top: 0;
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #000000;
         color: #eee;
+        margin: 20px;
     }
     .labels .ground td {color: #eeeeee66;}
     header, body > nav {
