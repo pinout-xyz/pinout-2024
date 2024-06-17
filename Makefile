@@ -1,4 +1,4 @@
-.PHONY: usage check pytest qa build-deps check
+.PHONY: usage check pytest qa build-deps check build
 usage:
 	@echo "Usage: make <target>, where target is one of:\n"
 	@echo "dev-deps:     install Python dev dependencies"
@@ -22,3 +22,9 @@ qa:
 
 pytest:
 	tox -e py
+
+build:
+	mkdir -p build
+	python build.py > build/index.html
+	cp assets/pinout.css build/
+	cp assets/pinout.js build/
