@@ -1,4 +1,4 @@
-body {
+body, html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
@@ -18,7 +18,7 @@ footer p {
 aside {
     margin-top: 20px; /* mobile, removed >= 640px */
     grid-template-rows: auto 1fr;
-    grid-template-columns: auto 196px;
+    grid-template-columns: auto 147px;
     display: grid;
 }
 aside nav {
@@ -38,6 +38,7 @@ ul, li {
 }
 aside li {
     font-size: 80%;
+    list-style: none;
 }
 section img {
     max-width: 100%;
@@ -230,9 +231,7 @@ section, footer {
     aside {
         margin-top: 0;
         grid-row: 2;
-    }
-    aside li {
-        margin-left: 20px;
+        grid-template-columns: auto 196px;
     }
     article p:nth-child(1) {
         margin-top: 0;
@@ -248,7 +247,6 @@ section, footer {
     body {
         background-color: #000000;
         color: #eee;
-        margin: 20px;
     }
     .labels .ground td {color: #eeeeee66;}
     header, body > nav {
