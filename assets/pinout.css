@@ -16,11 +16,11 @@ footer p {
     text-align: center;
 }
 aside {
-    margin-top: 20px; /* mobile, removed >= 640px */
     grid-template-rows: auto 1fr;
     grid-template-columns: auto 147px;
     display: grid;
 }
+/* The pinout diagram container */
 aside nav {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -56,13 +56,40 @@ a, a:hover {
 a:hover {
     text-decoration: none;
 }
-header, body > nav {
+header {
     background: #eeeeee;
     display: block;
-    line-height: 22px;
     padding: 20px;
     display: grid;
 }
+body > nav {
+    display: grid;
+    margin: 20px;
+}
+body > nav li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 2px;
+    float: left;
+}
+body > nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    background: #eee;
+    font-size: 80%;
+}
+nav li.beagle a {color: #f26322;border-color: #f26322;}
+nav li.raxda a {color: #74bc1f;border-color: #74bc1f;}
+nav li.rpi a {color: #cc2455;border-color: #cc2455;}
+nav li.selected a,
+nav li a:hover {
+    color: #eee;
+    background: #333;
+}
+nav li.selected a {margin-bottom:-2px;border-bottom-width: 2px; border-bottom-style: solid;}
+
 header {
     margin-top: 20px; /* mobile, removed >= 640px */
     grid-template-columns: auto auto;
@@ -73,11 +100,7 @@ header h1 {
     font-size: 20px;
     grid-column: 1;
 }
-header ul, nav ul {
-    grid-column: 2;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+header ul {
     text-align: right;
 }
 header li, nav li {
@@ -229,12 +252,14 @@ section, footer {
         margin: 0;
     }
     aside {
-        margin-top: 0;
         grid-row: 2;
         grid-template-columns: auto 196px;
     }
     article p:nth-child(1) {
         margin-top: 0;
+    }
+    body > nav {
+        margin: 0;
     }
     body > header {
         margin-top: 0;
@@ -248,9 +273,12 @@ section, footer {
         background-color: #000000;
         color: #eee;
     }
+    body > nav li a {
+        background: #151515;
+    }
     .labels .ground td {color: #eeeeee66;}
-    header, body > nav {
-        background: #111111;
+    header {
+        background: #151515;
     }
     .filter label,
     footer p,
@@ -264,7 +292,7 @@ section, footer {
         color: #3ba6f1;
     }
     .labels td {
-        border-bottom-color: #333333;
+        border-bottom-color: #1f1f1f;
     }
     .labels tbody tr:before {
         border-color: #000000;
