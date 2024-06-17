@@ -164,7 +164,7 @@ which don't pass the squint-test well */
 .uart   i {color: #6c71c4aa;}
 .ground i {color: #555555aa;}
 
-.fa-solid {margin-right:5px;}
+.fa-solid {width: 18px;}
 
 tr:hover i {color: inherit;}
 
