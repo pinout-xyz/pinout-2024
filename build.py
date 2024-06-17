@@ -92,15 +92,15 @@ for bank in banks:
             icon = ""
 
         if row_class == "power":
-            name = f"{icon} {name}"
+            name = f"{icon}{name}"
         elif canonical_function:
-            canonical_function = f"{icon} {canonical_function}"
+            canonical_function = f"{icon}{canonical_function}"
 
         pin_index = index * 2 + bank["pin_offset"]
         pins_html += f"""            <tr aria-label="Physical pin {index + 1}" class="{row_class}">
 <th>{pin_index}</th>
-<td>{name}</td>
-<td>{canonical_function}</td>
+<td><a href="#">{name}</a></td>
+<td><a href="#">{canonical_function}</a></td>
 </tr>""".replace("\n", "")
         pins_html += "\n"
 
