@@ -2,7 +2,7 @@
     "name": "Common",
     "signals": {
         "ground": {"name": "Ground", "type": "power", "subtype": "ground"},
-        "+5v":    {"name": "5v Power", "type": "power", "subtype": "+5v"},
-        "+3v3":   {"name": "3v3 Power", "type": "power", "subtype": "+3v3"}
+        "+5v":    {"name": "5v", "type": "power", "subtype": "+5v"},
+        "+3v3":   {"name": "3v3", "type": "power", "subtype": "+3v3"}
     }
 }
