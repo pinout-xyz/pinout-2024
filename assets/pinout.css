@@ -156,7 +156,8 @@ tr.ground:hover td {color: #fff;}
 which don't pass the squint-test well */
 .gpio   i {color: #859900aa;}
 /*.pwm    i {color: #002b36ee;}*/ /* TODO: Too dark for dark mode... */
-.power  i {color: #dc322faa;}
+.supply i {color: #dc322faa;}
+.power  i {color: #df8b2caa;}
 .i2s    i {color: #2aa198aa;}
 .gpclk  i {color: #df8f8eaa;}
 .i2c    i {color: #268bd2aa;}
@@ -171,7 +172,8 @@ tr:hover i {color: inherit;}
 /* Pin colours. Background for the pseudo element that forms the pin. */
 .labels tbody tr.gpio:before   {background-color: #859900aa;}
 .labels tbody tr.pwm:before    {background-color: #002b36aa;}
-.labels tbody tr.power:before  {background-color: #dc322faa;}
+.labels tbody tr.supply:before {background-color: #dc322faa;}
+.labels tbody tr.power:before  {background-color: #df8b2caa;}
 .labels tbody tr.i2s:before    {background-color: #2aa198aa;}
 .labels tbody tr.gpclk:before  {background-color: #df8f8eaa;}
 .labels tbody tr.i2c:before    {background-color: #268bd2aa;}
@@ -181,7 +183,8 @@ tr:hover i {color: inherit;}
 
 .labels tbody tr:hover.gpio td   {background-color: #859900cc; border-color: #859900ee;}
 .labels tbody tr:hover.pwm td    {background-color: #002b36cc; border-color: #002b36ee;}
-.labels tbody tr:hover.power td  {background-color: #dc322fcc; border-color: #dc322fee;}
+.labels tbody tr:hover.supply td {background-color: #dc322fcc; border-color: #dc322fee;}
+.labels tbody tr:hover.power td  {background-color: #df8b2ccc; border-color: #df8b2cee;}
 .labels tbody tr:hover.i2s td    {background-color: #2aa198cc; border-color: #2aa198ee;}
 .labels tbody tr:hover.gpclk td  {background-color: #df8f8ecc; border-color: #df8f8eee;}
 .labels tbody tr:hover.i2c td    {background-color: #268bd2cc; border-color: #268bd2ee;}
@@ -191,7 +194,8 @@ tr:hover i {color: inherit;}
 
 .labels tbody tr.gpio:hover:before  {background-color: #859900cc;border-color: #859900;}
 .labels tbody tr.pwm:hover:before   {background-color: #002b36cc;border-color: #002b36;}
-.labels tbody tr.power:hover:before {background-color: #dc322fcc;border-color: #dc322f;}
+.labels tbody tr.supply:hover:before{background-color: #dc322fcc;border-color: #dc322f;}
+.labels tbody tr.power:hover:before {background-color: #df8b2ccc;border-color: #df8b2c;}
 .labels tbody tr.i2s:hover:before   {background-color: #2aa198cc;border-color: #2aa198;}
 .labels tbody tr.gpclk:hover:before {background-color: #df8f8ecc;border-color: #df8f8e;}
 .labels tbody tr.i2c:hover:before   {background-color: #268bd2cc;border-color: #268bd2;}

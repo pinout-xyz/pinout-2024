@@ -68,6 +68,8 @@ for bank in banks:
         cls = pin_type
         if pin_type == "power":
             cls = pin_subtype if pin_subtype == "ground" else "power"
+            if pin_subtype == "+5v":
+                cls = "supply"
             row_class = cls
         alt_html = ""
 
@@ -91,7 +93,7 @@ for bank in banks:
         else:
             icon = ""
 
-        if row_class == "power":
+        if row_class in ("supply", "power"):
             name = f"{icon}{name}"
         elif canonical_function:
             canonical_function = f"{icon}{canonical_function}"
