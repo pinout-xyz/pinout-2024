@@ -6,12 +6,18 @@ valid_alt_mode_types = [
     "UART",
     "PIO",
     "I2S",
+    "PCM",
     "GPCLK",
     "JTAG",
     "SDIO",
     "SMI",
     "PWM",
+    "BSC",
+    "SDMMC",
+    "MII",
+    "RGMII",
     "UNUSED",
+    "RESERVED",
     "???"  # TODO: Remove me to check for untyped signals
 ]
 valid_pin_types = ["gpio", "power", "nc"]
