@@ -1,4 +1,4 @@
-.PHONY: usage check pytest qa build-deps check
+.PHONY: usage check pytest qa dev-deps shellcheck
 usage:
 	@echo "Usage: make <target>, where target is one of:\n"
 	@echo "dev-deps:     install Python dev dependencies"
